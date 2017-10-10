@@ -53,21 +53,6 @@
     }],
     "wrap-iife": ["error", "inside"],
     "linebreak-style": ["error", "unix"],
-    "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": true,
-        "ClassDeclaration": true,
-        "MethodDefinition": true,
-        "ArrowFunctionExpression": true,
-      }
-    }],
     "semi": ["error", "always"],
-    "valid-jsdoc": ["error", {
-      "preferType": {
-        "object": "Object",
-        "bool": "Boolean"
-      },
-      "requireReturn": false,
-    }]
   }
 }
