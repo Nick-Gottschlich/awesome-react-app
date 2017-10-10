@@ -1,0 +1,73 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true,
+    }
+  },
+  "globals": {
+    "BV": true,
+  },
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "consistent-return": "off",
+    "curly": "error",
+    "eqeqeq": "error",
+    "eol-last": "error",
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "key-spacing": ["error", {
+      "beforeColon": false,
+      "afterColon": true,
+    }],
+    "no-multiple-empty-lines": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": ["error", "nofunc"],
+    "no-unused-vars": ["error", {"varsIgnorePattern": "^h$"}],
+    "object-curly-spacing": ["error", "always"],
+    "prefer-const": "error",
+    "quote-props": ["error", "as-needed"],
+    "quotes": ["error", "single", {"avoidEscape": true}],
+    "radix": "error",
+    "keyword-spacing": "error",
+    "space-before-blocks": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "space-unary-ops": ["error", {
+      "words": true,
+      "nonwords": false,
+    }],
+    "wrap-iife": ["error", "inside"],
+    "linebreak-style": ["error", "unix"],
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "ClassDeclaration": true,
+        "MethodDefinition": true,
+        "ArrowFunctionExpression": true,
+      }
+    }],
+    "semi": ["error", "always"],
+    "valid-jsdoc": ["error", {
+      "preferType": {
+        "object": "Object",
+        "bool": "Boolean"
+      },
+      "requireReturn": false,
+    }]
+  }
+}
